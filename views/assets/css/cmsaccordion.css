@@ -1,0 +1,18 @@
+/* KM CMS Accordion – CSS */
+.km-acc{ border:none; border-radius:0; background:transparent; }
+.km-acc + .km-acc{ margin-top:12px; }
+
+.km-acc-header{
+  display:flex; align-items:center; gap:.5rem;
+  padding:0;                   /* bez podbicia pady */
+  cursor:pointer;              /* zostawiamy bo to klikalne */
+  list-style:none;
+}
+.km-acc-header::-webkit-details-marker { display:none; } /* ukryj znacznik przeglądarki */
+
+.km-acc-title { font-weight:600; text-decoration:underline; }
+.km-acc-icon{ width:1em; text-align:center; font-weight:700; }
+.km-acc-icon::before{ content:"▸"; }          /* zamknięte */
+.km-acc[open] .km-acc-icon::before{ content:"▾"; } /* otwarte */
+
+.km-acc-panel{ padding:0; border-top:none; }

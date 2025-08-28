@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+  <name>kmcmsaccordion</name>
+  <displayName><![CDATA[KM CMS Accordion (shortcode)]]></displayName>
+  <version><![CDATA[3.0.0]]></version>
+  <description><![CDATA[Wstaw [{accordion id=ID title="Tytuł" open=0/1 group="#selector"}] albo [{alias}] (zdefiniowany w konfiguracji), aby wyświetlić stronę CMS jako harmonijkę.]]></description>
+  <author><![CDATA[KM]]></author>
+  <tab><![CDATA[front_office_features]]></tab>
+  <is_configurable>1</is_configurable>
+  <need_instance>0</need_instance>
+  <confirmUninstall><![CDATA[Usunąć moduł KM CMS Accordion?]]></confirmUninstall>
+  <limited_countries></limited_countries>
+  <ps_versions_compliancy>
+    <min>1.7.0.0</min>
+    <max>9.99.99</max>
+  </ps_versions_compliancy>
+  <hooks>
+    <hook>header</hook>
+    <hook>actionOutputHTMLBefore</hook>
+    <hook>filterOutput</hook>
+  </hooks>
+</module>
